@@ -1,0 +1,7 @@
+:set makeprg=javac\ -g\ %
+compile file -> :make
+quickfix-> :copen, :cfirst, :clast, :cnext, :cprev
+
+run-> :!java %
+
+search all files-> :vimgrep /word/g file(s) or * 
