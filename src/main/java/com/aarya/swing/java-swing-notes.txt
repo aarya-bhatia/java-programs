@@ -1,0 +1,111 @@
+====================================
+JComponent API
+====================================
+
+# propeties of child component set by parents
+
+====================================
+1. Customizing component appearance
+====================================
+
+# void setBorder(Border), Border getBorder()
+# void setForeground(Color)
+# void setBackground(Color)
+# Color getForeground()
+# Color getBackground()
+# void setOpaque(boolean)
+# boolean isOpaque()
+# void setFont(Font)
+# Font getFont()
+# void setCursor(Cursor)
+# Cursor getCursor()
+
+====================================
+2. Setting and Getting Component State
+====================================
+
+# void setComponentPopupMenu(JPopoupMenu)
+# void setTransferHandler(TransferHandler) -> support cut,copy,paste to clipboard
+# void setToolTipText(String)
+# void setName(String)
+# String getName()
+# boolean isShowing()
+# void setEnabled(boolean) -> enabled component can response to events
+# boolean isEnabled()
+# void setVisible(boolean) -> components are initially visible, except top level containers like JFrame
+# boolean isVisible()
+
+====================================
+3. Event Handling
+====================================
+
+# void addHierarchyListener(hierachyListener l) -> responds to change in any component within hierarchy
+# void removeHierarchyListener(hierarchyListener l)
+# void addMouseListener(MouseListener)
+# void removeMouseListener(MouseListener)
+# void addMouseMotionListener(MouseMotionListener)
+# void removeMouseMotionListener(MouseMotionListener)
+# void addKeyListener(KeyListener)
+# void removeKeyListener(KeyListener)
+# void addComponentListener(ComponentListener) -> notified when component is hidden, shown, moved or resized
+# void removeComponentListener(ComponentListener)
+# boolean contains(int,int) -> determine specified point is within component
+# boolean contains(Point)
+# Component getComponentAt(int,int)
+# Component getComponentAt(Point)
+# Component setComponentZOrder(component,int index)
+# Component getComponentZOrder(component)
+
+====================================
+4. Painting Components
+====================================
+# void repaint(),
+# void repaint(int,int,int,int) -> specify area to be painted
+# void repaint(Rectangle)
+# void revalidate() -> relayout component & affected containers, invoke repaint() after using this
+# void paintComponent(Graphics) -> override this method for custom component painting
+
+====================================
+5. Containment Hierarchy
+====================================
+
+# Component add(Component)
+# Component add(Component, int) -> int specifies new components positioning
+# Component add(Component,Object) -> Object arg provides layout constraints to the current layout manager
+# void remove(int), remove(Component), removeAll()
+# JRootPane getRootPane()
+# Container getTopLevelAncestor() -> topmost container ex: Window, Applet or null
+# Container getParent() -> immediate parent component
+# int getComponentCount() -> num components in this container 
+# Component getComponent(int)
+# Component[] getComponents() -> get all contained comps
+# Component getComponentZOrder(int)
+# Component[] getComponentZOrder()
+
+====================================
+6. Layout
+====================================
+
+# void setPreferredSize(Dimension)
+# void setMaximumSize(Dimension)
+# void setMinimumSize(Dimension)
+# Dimension getPreferredSize(),getMaximumSize(),getMinimumSize()
+# void setAlignmentX(float),setAlignmentY(float) -> value between 0 and 1 where 1 means align furthest from origin, 0.5 is centred etc
+# float getAlignmentX(),getAlignmentY()
+# void setLayout(LayoutManager)
+# LayoutManager getLayout()
+# void applyComponentOrientation(ComponentOrientation)
+# void setComponentOrientation(ComponentOrientation)
+
+====================================
+7. Size & Position
+====================================
+
+# int getWidth(),getHeight()
+# 
+
+====================================
+8. 
+====================================
+
+

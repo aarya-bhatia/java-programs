@@ -1,10 +1,13 @@
+package com.aarya.system;
+
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
-	public static void main(String args[]) {
-		String command = "ls";
-		command = "touch user_01.xml";
-		try {
+	public static void main(String[] args) {
+		System.out.println("Enter command: ");
+		try (Scanner sc = new Scanner(System.in)) {
+			String command = sc.nextLine();
 			Process process = Runtime.getRuntime().exec(command);
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 			String line;
