@@ -1,8 +1,8 @@
 package com.aarya.Playground;
 
 public class ColorGridProblem {
-	
-	static class  Grid {
+
+	private static class  Grid {
 		int rows;
 		int cols;
 		Cell table[][];
@@ -49,7 +49,7 @@ public class ColorGridProblem {
 		}
 	}
 
-	static class Cell {
+	private static class Cell {
 		int x;
 		int y;
 		char code;

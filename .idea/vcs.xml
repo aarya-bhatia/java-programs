@@ -2,15 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/NewtonApproximation" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/RiemannSum" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/authentication" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/java-swing" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/serialization" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/main/java/com/aarya/NewtonApproximation" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/main/java/com/aarya/RiemannSum" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/main/java/com/aarya/authentication" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/main/java/com/aarya/java-swing" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/main/java/com/aarya/serialization" vcs="Git" />
   </component>
 </project>
